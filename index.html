@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Timer Regressivo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./CSS/Style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <audio id="alarm"src="./Sound/alarm.mp3" style="display: none;"></audio>
+
+    <div class="container">
+        <h2>Horas:</h2>
+        <select id="horas" name="horas"></select>
+        
+        <h2>Minutos:</h2>
+        <select id="minutos" name="minutos"></select>
+
+        <h2>Segundos:</h2>
+        <select id="segundos" name="segundos"></select>
+        <br/>
+        <br/>
+        <button class="buttoncomecar"id="comecar">Começar</button>
+        <button class="buttonpausar"id="pausar">Pausar</button>
+        <button class="buttondespausar"id="despausar" onclick="resume()">Despausar</button>
+        <button class="buttonparar"id="parar" onclick="stop()">parar</button>
+        <div id="display">
+            <h3 id="watch">00:00:00</h3>
+        </div>
+    </div>
+
+    <script src="./TimerScript/Timer.js"></script>
+
+</body>
+
+</html>
